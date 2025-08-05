@@ -1,0 +1,114 @@
+v 4
+file . "registradores.vhdl" "71b093c71770101537b47b4f7cfff49cbb726cfc" "20240519142834.974":
+  entity registrador_1bit at 2( 77) + 0 on 8093;
+  architecture reg1bit of registrador_1bit at 15( 333) + 0 on 8094;
+  entity registradorac at 38( 847) + 0 on 8095;
+  architecture regac of registradorac at 51( 1168) + 0 on 8096;
+  entity flags at 76( 2386) + 0 on 8097;
+  architecture regflags of flags at 89( 2729) + 0 on 8098;
+  entity registradorrem at 108( 3368) + 0 on 8099;
+  architecture regrem of registradorrem at 121( 3700) + 0 on 8100;
+  entity registradorrdm at 146( 4958) + 0 on 8101;
+  architecture regrdm of registradorrdm at 159( 5290) + 0 on 8102;
+  entity registradorpc at 184( 6567) + 0 on 8103;
+  architecture regpc of registradorpc at 197( 6878) + 0 on 8104;
+  entity registradorri at 222( 7933) + 0 on 8105;
+  architecture regri of registradorri at 235( 8254) + 0 on 8106;
+file . "multiplexadores.vhdl" "7150336e8cff01f01288db97d3f1dc998b9d19a7" "20240519142834.962":
+  entity mux5x8 at 2( 68) + 0 on 8069;
+  architecture mux of mux5x8 at 17( 506) + 0 on 8070;
+  entity mux2x8pc at 30( 861) + 0 on 8071;
+  architecture comutar of mux2x8pc at 42( 1123) + 0 on 8072;
+  entity mux2x11jn at 53( 1348) + 0 on 8073;
+  architecture selecionar of mux2x11jn at 65( 1614) + 0 on 8074;
+  entity mux2x11jz at 76( 1845) + 0 on 8075;
+  architecture selecionar of mux2x11jz at 88( 2111) + 0 on 8076;
+  entity mux11x11z at 99( 2338) + 0 on 8077;
+  architecture selecionar of mux11x11z at 120( 3095) + 0 on 8078;
+file . "ULA.vhdl" "d398f12640a61954c7d6cd05d9998a89ea68d6a7" "20240519142835.001":
+  entity ula at 2( 60) + 0 on 8111;
+  architecture comportamento of ula at 16( 432) + 0 on 8112;
+file . "tb_ULA.vhdl" "74bca6f21233339f821b1033fce760936ea37b61" "20240519142834.999":
+  entity tb_ula at 24( 1105) + 0 on 8109;
+  architecture quickmath of tb_ula at 30( 1186) + 0 on 8110;
+file . "tb_ULA_MEM.vhdl" "24e995318b23df4e766fd7130c6adb2a6863b39d" "20240519142834.990":
+  entity tb_ula_mem at 24( 1174) + 0 on 8107;
+  architecture quickmath of tb_ula_mem at 30( 1263) + 0 on 8108;
+file . "operações(ULA).vhdl" "9f6019c9a9606a69f45742ced9d93e5d32ecaacd" "20240519142834.968":
+  entity lda8 at 2( 60) + 0 on 8083;
+  architecture comportamento of lda8 at 12( 235) + 0 on 8084;
+  entity add8 at 20( 373) + 0 on 8085;
+  architecture comutar of add8 at 32( 617) + 0 on 8086;
+  entity or8 at 67( 1821) + 0 on 8087;
+  architecture comportamento of or8 at 78( 2035) + 0 on 8088;
+  entity and8 at 86( 2179) + 0 on 8089;
+  architecture comportamento of and8 at 97( 2394) + 0 on 8090;
+  entity not8 at 105( 2537) + 0 on 8091;
+  architecture comportamento of not8 at 115( 2710) + 0 on 8092;
+file . "NEANDER.vhdl" "ce88a3ce74b1509ceaed5a5f13b98e7249920946" "20240519142834.964":
+  entity neander at 1( 0) + 0 on 8081;
+  architecture maquina of neander at 11( 151) + 0 on 8082;
+file . "NEANDER_tb.vhdl" "85048a1f5493d69b6789f73ff6c5af1903457485" "20240519142834.963":
+  entity tb_neander at 3( 160) + 0 on 8079;
+  architecture letsdothis of tb_neander at 9( 249) + 0 on 8080;
+file . "módulo_memória.vhdl" "faf578d95a245d81cac4358e914501bbc3db87ef" "20240519142834.958":
+  entity as_ram at 2( 95) + 0 on 8065;
+  architecture behavior of as_ram at 16( 378) + 0 on 8066;
+  entity modulo_memoria at 61( 1851) + 0 on 8067;
+  architecture comportamento of modulo_memoria at 77( 2337) + 0 on 8068;
+file . "FFJK_TD.vhdl" "722e92a875ae6289f2d48cba67ad36145d7a406e" "20240519142834.926":
+  entity ffjk at 2( 15) + 0 on 8029;
+  architecture latch of ffjk at 14( 228) + 0 on 8030;
+  entity ffd at 72( 2176) + 0 on 8031;
+  architecture latch of ffd at 84( 2388) + 0 on 8032;
+  entity fft at 107( 2836) + 0 on 8033;
+  architecture latch of fft at 119( 3048) + 0 on 8034;
+file . "ALU.vhdl" "f2a5fca5e47d5b61414cfc458799264696380576" "20240519142834.921":
+  entity dnz at 2( 68) + 0 on 8021;
+  architecture comportamento of dnz at 12( 242) + 0 on 8022;
+  entity alu at 21( 518) + 0 on 8023;
+  architecture alu of alu at 34( 830) + 0 on 8024;
+file . "modulo_controle.vhdl" "ee8205fb0423009f3dfe23802fcae6a55b1882ea" "20240519142834.938":
+  entity decodificador at 2( 74) + 0 on 8061;
+  architecture decode of decodificador at 12( 287) + 0 on 8062;
+  entity modulo_controle at 31( 1191) + 0 on 8063;
+  architecture controlar of modulo_controle at 44( 1519) + 0 on 8064;
+file . "instruções(controle).vhdl" "353f87cee26e2fca2c7f7bff6b3b1edcd72eea00" "20240519142834.936":
+  entity jn at 2( 59) + 0 on 8035;
+  architecture sen of jn at 12( 245) + 0 on 8036;
+  entity jz at 29( 693) + 0 on 8037;
+  architecture sez of jz at 39( 879) + 0 on 8038;
+  entity instr_nop at 58( 1404) + 0 on 8039;
+  architecture nop of instr_nop at 68( 1597) + 0 on 8040;
+  entity instr_sta at 85( 2086) + 0 on 8041;
+  architecture sta of instr_sta at 95( 2279) + 0 on 8042;
+  entity instr_lda at 112( 2886) + 0 on 8043;
+  architecture lda of instr_lda at 122( 3079) + 0 on 8044;
+  entity instr_add at 139( 3711) + 0 on 8045;
+  architecture add of instr_add at 149( 3904) + 0 on 8046;
+  entity instr_and at 166( 4536) + 0 on 8047;
+  architecture and_e of instr_and at 176( 4729) + 0 on 8048;
+  entity instr_or at 193( 5361) + 0 on 8049;
+  architecture or_ou of instr_or at 203( 5553) + 0 on 8050;
+  entity instr_not at 220( 6176) + 0 on 8051;
+  architecture not_n of instr_not at 230( 6369) + 0 on 8052;
+  entity instr_jmp at 247( 6893) + 0 on 8053;
+  architecture jmp of instr_jmp at 257( 7086) + 0 on 8054;
+  entity instr_jn at 274( 7588) + 0 on 8055;
+  architecture se_n of instr_jn at 285( 7831) + 0 on 8056;
+  entity instr_jz at 321( 8739) + 0 on 8057;
+  architecture se_z of instr_jz at 332( 8979) + 0 on 8058;
+  entity instr_hlt at 368( 9888) + 0 on 8059;
+  architecture hlt of instr_hlt at 378( 10081) + 0 on 8060;
+file . "controle_PC.vhdl" "515da98cbf1cafe43ae4f3f3f337e0bb59791978" "20240519142834.923":
+  entity add_pc at 2( 68) + 0 on 8025;
+  architecture somar of add_pc at 14( 314) + 0 on 8026;
+  entity controle_pc at 49( 1545) + 0 on 8027;
+  architecture programcounter of controle_pc at 62( 1879) + 0 on 8028;
+file . "unidade_controle.vhdl" "a0fad012554960e79ec24426a99890e2092d23e7" "20240519142835.004":
+  entity ctrl_contador at 2( 75) + 0 on 8113;
+  architecture controlar of ctrl_contador at 12( 269) + 0 on 8114;
+  entity contador at 30( 543) + 0 on 8115;
+  architecture contar of contador at 41( 772) + 0 on 8116;
+  entity unidade_controle at 75( 1716) + 0 on 8117;
+  architecture control_unit of unidade_controle at 87( 2036) + 0 on 8118;
